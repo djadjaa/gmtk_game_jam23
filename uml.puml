@@ -1,0 +1,24 @@
+@startuml
+abstract Door {
+}
+abstract Window {
+}
+class House {
+}
+class Garden {
+}
+
+Door <|-- WoodenDoor
+Door <|-- MetalDoor
+Door <|-- CodedDoor
+
+Window <|-- RegularWindow
+Window <|-- BarsWindow
+Window <|-- RollWindow
+
+House *-- Door
+House *-- Window
+
+Property *-- House
+Property *-- Garden
+@enduml
